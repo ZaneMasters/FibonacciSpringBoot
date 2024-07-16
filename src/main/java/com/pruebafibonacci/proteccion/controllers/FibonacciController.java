@@ -49,9 +49,9 @@ public class FibonacciController {
             // Enviar correo
             String subject = "Prueba Técnica - Angel Eduardo Rodriguez Arguello";
             String body = String.format("Hora de generación: %s\nSerie Fibonacci: %s\nEnvio serie fibonacci.", time, fibonacciSeries.toString());
-            //emailService.sendEmail("didier.correa@proteccion.com.co", subject, body);
-            //emailService.sendEmail("correalondon@gmail.com", subject, body);
-            emailService.sendEmail("angel.pro98@gmail.com", subject, body);
+            emailService.sendEmail("didier.correa@proteccion.com.co", subject, body);
+            emailService.sendEmail("correalondon@gmail.com", subject, body);
+            //emailService.sendEmail("angel.pro98@gmail.com", subject, body);
 
             return ResponseEntity.ok(fibonacciSeries);
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
